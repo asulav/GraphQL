@@ -59,7 +59,7 @@ class Story(models.Model):
 ---------
 > Inside ***stories/serializers.py***
 ```
-from django.contrib.auth.models import User, Group
+from django.contrib.auth.models import Author, Story
 from rest_framework import serializers
 
 
