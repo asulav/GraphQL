@@ -1,35 +1,19 @@
-#### Introduction to GraphQL
+### DRF Example
+```# Create the project directory
+mkdir tutorial
+cd tutorial
 
-BackGround:
-- SOAP
-- REST
-- CORS
-- RPC
-- GraphQL
+# Create a virtual environment to isolate our package dependencies locally
+python3 -m venv env
+source env/bin/activate  # On Windows use `env\Scripts\activate`
 
-#### SOAP (Simple Object Access Protocol)
- > XML based, open standard, messaging protocol for exchaning information between/among computers via the internet.
- > SOAP can and has been used for many things such as:
-   - Extending HTTP for XML messaging
-   - Data Transport for Web Services
-   - Exchanging complete documents
-   - Broadcasting a message
-   - Calling **Remote Procedures**
-> Format of SOAP message
-   - Envelope: Defines the Start and End of a message in SOAP. (Required)
-   - Header: Attributes of a message used in processing that paticular message. (Optional)
-   - Body: Contains the XML data, with the data to be sent. (Required)
-   - Fault: Field that provides information about errors that occur while processing the message. (Optional)
- 
+# Install Django and Django REST framework into the virtual environment
+pip install django
+pip install djangorestframework
 
-
-
-
-
-
-
-
-
-
-> GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data.
->                                                                                            - "GraphQL.org" 
+# Set up a new project with a single application
+django-admin startproject tutorial .  # Note the trailing '.' character
+cd tutorial
+django-admin startapp quickstart
+cd ..
+```
