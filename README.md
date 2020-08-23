@@ -18,6 +18,7 @@ cd tutorial
 django-admin startapp story
 cd ..
 ```
+*** You also need to modify the settings.py folder to add the new app to drf ***
 ```
 # Migrate the default database
 python manage.py migrate
