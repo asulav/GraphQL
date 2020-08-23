@@ -15,6 +15,11 @@ BackGround:
    - Exchanging complete documents
    - Broadcasting a message
    - Calling **Remote Procedures**
+> Format of SOAP message
+   - Envelope: Defines the Start and End of a message in SOAP. (Required)
+   - Header: Attributes of a message used in processing that paticular message. (Optional)
+   - Body: Contains the XML data, with the data to be sent. (Required)
+   - Fault: Field that provides information about errors that occur while processing the message. (Optional)
  
 
 
