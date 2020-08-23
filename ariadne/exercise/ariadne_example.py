@@ -1,6 +1,6 @@
 import uvicorn
 
-from ariadne import QueryType, gql, make_executable_schema
+from ariadne import QueryType, gql, make_executable_schema, MutationType
 from ariadne.asgi import GraphQL
 
 type_defs = gql("""
@@ -8,6 +8,11 @@ type_defs = gql("""
     user: User
     users: [User]
   }
+  
+  type Mutation {
+    createUser(name: String, email: String): User
+  }
+
   type User {
     id: ID!
     name: String
@@ -16,10 +21,20 @@ type_defs = gql("""
 """)
 
 query = QueryType()
+mutation = MutationType()
+users = [{"id": 1, "name": "Ada Lovelace", "email": "ada@example.com"},
+         {"id": 2, "name": "Alan Turing", "email": "alan@example.com"}]
 
+@mutation.field("createUser")
+def resolver_createUser(_, info, name, email):
+    newdict = {"id": users[-1]["id"], "name": name, "email":email }
+    users.append(newdict)
+    print(users)
+    return newdict
 
 @query.field("user")
 def resolve_user(_, info):
+    print("hi")
     return users[0]
 
 
@@ -28,13 +43,8 @@ def resolve_users(_, info):
     return users
 
 
-schema = make_executable_schema(type_defs, query)
+schema = make_executable_schema(type_defs, [query, mutation])
 app = GraphQL(schema, debug=True)
-
-users = [
-    {"id": 1, "name": "Ada Lovelace", "email": "ada@example.com"},
-    {"id": 2, "name": "Alan Turing", "email": "alan@example.com"},
-]
 
 
 if __name__ == "__main__":
