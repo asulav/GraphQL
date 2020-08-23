@@ -1,0 +1,212 @@
+[
+  {
+    "model": "story.author",
+    "pk": 2,
+    "fields": {
+      "first_name": "Ryan",
+      "last_name": "North",
+      "twitter_account": "ryanqnorth"
+    }
+  },
+  {
+    "model": "story.author",
+    "pk": 3,
+    "fields": {
+      "first_name": "Jeff",
+      "last_name": "Patton",
+      "twitter_account": "jeffpatton"
+    }
+  },
+  {
+    "model": "story.author",
+    "pk": 4,
+    "fields": {
+      "first_name": "Dave",
+      "last_name": "Anderson",
+      "twitter_account": "dvndrsn"
+    }
+  },
+  {
+    "model": "story.author",
+    "pk": 5,
+    "fields": {
+      "first_name": "George R. R.",
+      "last_name": "Martin",
+      "twitter_account": "GRRMspeaking"
+    }
+  },
+  {
+    "model": "story.author",
+    "pk": 6,
+    "fields": {
+      "first_name": "Ann",
+      "last_name": "Leckie",
+      "twitter_account": "ann_leckie"
+    }
+  },
+  {
+    "model": "story.author",
+    "pk": 7,
+    "fields": {
+      "first_name": "Eric J.",
+      "last_name": "Evans",
+      "twitter_account": "ericevans0"
+    }
+  },
+  {
+    "model": "story.story",
+    "pk": 2,
+    "fields": {
+      "title": "Romeo and/or Juliet",
+      "subtitle": "A Chooseable-Path Adventure",
+      "description": "What if Romeo never met Juliet? What if Juliet got really buff instead of moping around the castle all day? What if they teamed up to take over Verona with robot suits?",
+      "published_date": "2016-07-07",
+      "author": 2,
+      "created_at": "2018-10-08T05:07:36.437Z",
+      "updated_at": "2019-04-08T16:48:30.436Z"
+    }
+  },
+  {
+    "model": "story.story",
+    "pk": 3,
+    "fields": {
+      "title": "User Story Mapping",
+      "subtitle": "The whole story and stuff",
+      "description": "A product management book",
+      "published_date": "2019-04-08",
+      "author": 3,
+      "created_at": "2019-03-03T16:36:22.126Z",
+      "updated_at": "2019-03-03T17:06:03.124Z"
+    }
+  },
+  {
+    "model": "story.story",
+    "pk": 4,
+    "fields": {
+      "title": "Ancillary Justice",
+      "subtitle": "Imperial Radch Book 1",
+      "description": "In this stunning space opera, a warship's AI becomes trapped in a human body, her goals reduced to one: revenge.",
+      "published_date": "2013-10-01",
+      "author": 6,
+      "created_at": "2019-04-08T16:59:54.494Z",
+      "updated_at": "2019-04-08T16:59:54.494Z"
+    }
+  },
+  {
+    "model": "story.story",
+    "pk": 5,
+    "fields": {
+      "title": "Ancillary Sword",
+      "subtitle": "Imperial Radch Book 2",
+      "description": "Athoek was annexed some six hundred years ago, and by now everyone is fully civilized\u2014or should be. But everything is not as tranquil as it appears.",
+      "published_date": "2014-10-07",
+      "author": 6,
+      "created_at": "2019-04-08T17:03:47.079Z",
+      "updated_at": "2019-04-08T17:03:47.079Z"
+    }
+  },
+  {
+    "model": "story.story",
+    "pk": 6,
+    "fields": {
+      "title": "Ancillary Mercy",
+      "subtitle": "Imperial Radch Book 3",
+      "description": "For a moment, things seemed to be under control for Breq, the soldier who used to be a warship. Then a search of Athoek Station's slums turns up someone who shouldn't exist, and a messenger from the mysterious Presger empire arrives, as does Breq's enemy,",
+      "published_date": "2015-10-06",
+      "author": 6,
+      "created_at": "2019-04-08T17:05:06.314Z",
+      "updated_at": "2019-04-08T17:05:06.314Z"
+    }
+  },
+  {
+    "model": "story.story",
+    "pk": 7,
+    "fields": {
+      "title": "The Raven Tower",
+      "subtitle": null,
+      "description": "Gods meddle in the fates of men, men play with the fates of gods, and a pretender must be cast down from the throne in this breathtaking first fantasy novel from Ann Leckie, New York Times bestselling author and winner of the Hugo, Nebula, and Arthur C. C",
+      "published_date": "2019-02-26",
+      "author": 6,
+      "created_at": "2019-04-08T17:11:03.861Z",
+      "updated_at": "2019-04-08T17:11:03.861Z"
+    }
+  },
+  {
+    "model": "story.story",
+    "pk": 8,
+    "fields": {
+      "title": "A Game of Thrones",
+      "subtitle": "A Song of Ice and Fire Book 1",
+      "description": "Long ago, in a time forgotten, a preternatural event threw the seasons out of balance. In a land where summers can last decades and winters a lifetime, trouble is brewing. The cold is returning, and in the frozen wastes to the north of Winterfell, siniste",
+      "published_date": "2005-08-06",
+      "author": 5,
+      "created_at": "2019-04-08T17:13:18.012Z",
+      "updated_at": "2019-04-08T17:13:18.012Z"
+    }
+  },
+  {
+    "model": "story.story",
+    "pk": 9,
+    "fields": {
+      "title": "A Clash of Kings",
+      "subtitle": "A Song of Ice and Fire Book 2",
+      "description": "A comet the color of blood and flame cuts across the sky. Two great leaders\u2014Lord Eddard Stark and Robert Baratheon\u2014who hold sway over an age of enforced peace are dead, victims of royal treachery. Now, from the ancient citadel of Dragonstone to the forbid",
+      "published_date": "1998-11-16",
+      "author": 5,
+      "created_at": "2019-04-08T17:14:27.918Z",
+      "updated_at": "2019-04-08T17:14:27.919Z"
+    }
+  },
+  {
+    "model": "story.story",
+    "pk": 10,
+    "fields": {
+      "title": "A Storm of Swords",
+      "subtitle": "A Song of Ice and Fire Book 3",
+      "description": "Of the five contenders for power, one is dead, another in disfavor, and still the wars rage as alliances are made and broken.",
+      "published_date": "2000-08-08",
+      "author": 5,
+      "created_at": "2019-04-08T17:16:08.989Z",
+      "updated_at": "2019-04-08T17:16:08.989Z"
+    }
+  },
+  {
+    "model": "story.story",
+    "pk": 11,
+    "fields": {
+      "title": "A Feast for Crows",
+      "subtitle": "A Song of Ice and Fire Book 4",
+      "description": "Bloodthirsty, treacherous and cunning, the Lannisters are in power on the Iron Throne in the name of the boy-king Tommen. The war in the Seven Kingdoms has burned itself out, but in its bitter aftermath new conflicts spark to life.",
+      "published_date": "2005-10-17",
+      "author": 5,
+      "created_at": "2019-04-08T17:17:26.102Z",
+      "updated_at": "2019-04-08T17:17:26.102Z"
+    }
+  },
+  {
+    "model": "story.story",
+    "pk": 12,
+    "fields": {
+      "title": "A Dance with Dragons",
+      "subtitle": "A Song of Ice and Fire Book 5",
+      "description": "In the aftermath of a colossal battle, the future of the Seven Kingdoms hangs in the balance\u2014beset by newly emerging threats from every direction. In the east, Daenerys Targaryen, the last scion of House Targaryen, rules with her three dragons as queen of",
+      "published_date": "2011-07-12",
+      "author": 5,
+      "created_at": "2019-04-08T17:18:16.325Z",
+      "updated_at": "2019-04-08T17:18:16.325Z"
+    }
+  },
+  {
+    "model": "story.story",
+    "pk": 13,
+    "fields": {
+      "title": "Domain Driven Design",
+      "subtitle": "Tackling Complexity in the Heart of Software",
+      "description": "Domain-driven design is an approach to software development for complex needs by connecting the implementation to an evolving model.",
+      "published_date": "2003-08-30",
+      "author": 7,
+      "created_at": "2019-04-08T17:23:43.724Z",
+      "updated_at": "2019-04-08T17:23:43.724Z"
+    }
+  },
+]
