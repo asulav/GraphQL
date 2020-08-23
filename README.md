@@ -64,12 +64,12 @@ from rest_framework import serializers
 
 class AuthorSerializer(serializers.ModelSerializer):
     class Meta:
-        model = User
+        model = Author
         fields = '__all__'
 
 class StorySerializer(serializers.ModelSerializer):
     class Meta:
-        model = Group
+        model = Story
         fields = '__all__'
 ```
 > Inside ***stories/views.py***
@@ -77,4 +77,20 @@ class StorySerializer(serializers.ModelSerializer):
 from tutorial.story.models import Author, Story
 from rest_framework import viewsets
 from tutorial.story.serializers import AuthorSerializer, StorySerializer
+
+
+class AuthorViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows users to be viewed or edited.
+    """
+    queryset = Author.objects.all()
+    serializer_class = AuthorSerializer
+
+
+class StoryViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows groups to be viewed or edited.
+    """
+    queryset = Story.objects.all()
+    serializer_class = StorySerializer
 ```
