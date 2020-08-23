@@ -22,6 +22,8 @@ cd ..
 # Migrate the default database
 python manage.py migrate
 ```
+---------
+> Inside ***stories/models.py***
 ```
 from django.db import models
 
