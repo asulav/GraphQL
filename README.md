@@ -1,5 +1,6 @@
 ### DRF Example
-```# Create the project directory
+```
+# Create the project directory
 mkdir tutorial
 cd tutorial
 
@@ -16,4 +17,8 @@ django-admin startproject tutorial .  # Note the trailing '.' character
 cd tutorial
 django-admin startapp quickstart
 cd ..
+```
+```
+# Migrate the default database
+python manage.py migrate
 ```
